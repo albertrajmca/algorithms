@@ -36,11 +36,11 @@ $last = $totalElements - 1;
 
 $try = 0;
 
-for($i=0; $i<$totalElements; $i++)
+while($first <= $last)
 { 
 	$try++;
 	$mid = floor(($first + $last) / 2);
-
+	echo "Mid Point ". $mid . PHP_EOL;
 	if ($input[$mid] == $target) 
 	{
 		$found = true;
